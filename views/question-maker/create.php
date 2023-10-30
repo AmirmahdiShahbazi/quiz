@@ -20,6 +20,7 @@
     <!-- add-questions -->
     <div class="container mt-3">
         <h2>ایجاد آزمون</h2>
+        <hr class="mb-4" />
         <form id="quiz" class="">
             <h3>1.</h3>
             <div class="form-group">
@@ -53,36 +54,24 @@
 
 
             <label for="level">سطح سوال</label>
-            <div class="form-group border py-3">
-                <div class="form-check form-check-inline" id="level">
-                    <input class="form-check-input" name=easy[] type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                    <label class="form-check-label mr-1" for="exampleRadios1">
-                        آسان
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" name=medium[] type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                    <label class="form-check-label mr-1" for="exampleRadios2">
-                        متوسط
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" name=hard[] type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                    <label class="form-check-label mr-1" for="exampleRadios2">
-                        سخت
-                    </label>
-                </div>
+            <div class="form-group  py-2">
+                <select class="form-control" name="level[]" id="level">
+                    <option>آسان</option>
+                    <option>متوسط</option>
+                    <option>سخت</option>
+     
+                </select>
             </div>
 
-            <hr class="my-4"/>
+            <hr class="my-4" />
             <div id="additionalQuizes"></div>
 
             <span for="number">اضافه کردن
                 <input type="number" class="" style="max-width: 5%;" id="number"> سوال
                 <button type="button" class="btn btn-primary mr-3" onclick="additionalQuizes()">اضافه کردن</button>
             </span>
-            
-            <hr class="my-3"/>
+
+            <hr class="my-3" />
 
             <div class="form-group">
 
@@ -105,7 +94,7 @@
             </div>
 
 
-        <button type="submit" class="btn btn-primary">ساخت آزمون</button>
+            <button type="submit" class="btn btn-primary">ساخت آزمون</button>
 
         </form>
 
@@ -163,25 +152,13 @@
 
 
             <label for="level${i+1}">سطح سوال</label>
-            <div class="form-group border py-3" id="level${i+1}">
-                <div class="form-check form-check-inline" id="level">
-                    <input class="form-check-input" name=easy[] type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                    <label class="form-check-label mr-1" for="exampleRadios1">
-                        آسان
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" name=medium[] type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                    <label class="form-check-label mr-1" for="exampleRadios2">
-                        متوسط
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" name=hard[] type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                    <label class="form-check-label mr-1" for="exampleRadios2">
-                        سخت
-                    </label>
-                </div>
+            <div class="form-group py-2" id="level${i+1}">
+                <select class="form-control" name=level[] id="level">
+                    <option>آسان</option>
+                    <option>متوسط</option>
+                    <option>سخت</option>
+     
+                </select>
             </div>
 
 
